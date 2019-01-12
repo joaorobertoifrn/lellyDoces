@@ -38,3 +38,18 @@ nprogress@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
   integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
+
+typeface-gloria-hallelujah@^0.0.54:
+  version "0.0.54"
+  resolved "https://registry.yarnpkg.com/typeface-gloria-hallelujah/-/typeface-gloria-hallelujah-0.0.54.tgz#4ab9da1149a0bf73baadfb3074428f91e98fb2a7"
+  integrity sha512-gxkjv9duQc6mEJNG/Jl+kzVau2+CmZDFJI5GP1VCzsMPtPUctBnJMsKl3juST0iVcukyVkqwHyCJ66ndYv7NCA==
+
+typeface-open-sans@^0.0.54:
+  version "0.0.54"
+  resolved "https://registry.yarnpkg.com/typeface-open-sans/-/typeface-open-sans-0.0.54.tgz#20f5b5ea5c7f95d89dc1f8b2d2b1457680129cee"
+  integrity sha512-w6wOd6EicZdZKf0jSU/K3EzEi3zFgvWQSN7NOpRIQI5KeMWmC5Pg/lqtBVJHB0pRChYRmLdhf4h8ROur0A3JZQ==
+
+typeface-paytone-one@^0.0.54:
+  version "0.0.54"
+  resolved "https://registry.yarnpkg.com/typeface-paytone-one/-/typeface-paytone-one-0.0.54.tgz#2c6da9ca25fa0a29be8ce41f949f39b1c5d6e5b3"
+  integrity sha512-18ONsJtTN6XHVT3LDrbnHQysuBLsXqRqnXQIVKie3vxJwZ2c8VxvrtUl2ouLpT8DO52TjP3My8h9WolFr92bsg==
