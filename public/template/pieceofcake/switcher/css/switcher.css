@@ -4,11 +4,11 @@
 	border:1px solid #dedede;
 	padding:40px;
 }
-.demo_changer{ 
-    z-index: 1900; 
+.demo_changer{
+    z-index: 1900;
     position: fixed;
     left: -301px;
-    top: 80px; 
+    top: 80px;
 	font-family: 'Open Sans',sans-serif;
     font-weight: 400 !important;
 }
@@ -139,7 +139,7 @@ a.evo-hist{margin-left:6px}
 	color:#fff;
 	font-size:21px;
 }
-.demo_changer .btn{ 
+.demo_changer .btn{
 	margin-top:10px;
 }
 .demo_changer .demo-icon{
@@ -204,7 +204,7 @@ a.evo-hist{margin-left:6px}
 .demo_changer{
     display: none;
 }
-} 
+}
 .demo_changer .btn {
 	width:165px !important;
 }

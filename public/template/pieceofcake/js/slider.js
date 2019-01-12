@@ -1,8 +1,8 @@
 //Document ready function
-$(document).ready(function() {	
+$(document).ready(function() {
 
 	// Parallax Slider
-	
+
 		  var $slider = $(".slider"),
 			  $slideBGs = $(".slide__bg"),
 			  diff = 0,
@@ -13,7 +13,7 @@ $(document).ready(function() {
 			  autoSlideTimeout,
 			  autoSlideDelay = 6000,
 			  $pagination = $(".slider-pagi");
-		  
+
 		  function createBullets() {
 			for (var i = 0; i < numOfSlides+1; i++) {
 			  var $li = $("<li class='slider-pagi__elem'></li>");
@@ -22,15 +22,15 @@ $(document).ready(function() {
 			  $pagination.append($li);
 			}
 		  };
-		  
+
 		  createBullets();
-		  
+
 		  function manageControls() {
 			$(".slider-control").removeClass("inactive");
 			if (!curSlide) $(".slider-control.left").addClass("inactive");
 			if (curSlide === numOfSlides) $(".slider-control.right").addClass("inactive");
 		  };
-		  
+
 		  function autoSlide() {
 			autoSlideTimeout = setTimeout(function() {
 			  curSlide++;
@@ -38,9 +38,9 @@ $(document).ready(function() {
 			  changeSlides();
 			}, autoSlideDelay);
 		  };
-		  
+
 		  autoSlide();
-		  
+
 		  function changeSlides(instant) {
 			if (!instant) {
 			  animating = true;
@@ -81,7 +81,7 @@ $(document).ready(function() {
 			var startX = e.pageX || e.originalEvent.touches[0].pageX,
 				winW = $(window).width();
 			diff = 0;
-			
+
 			$(document).on("mousemove touchmove", function(e) {
 			  var x = e.pageX || e.originalEvent.touches[0].pageX;
 			  diff = (startX - x) / winW * 70;
@@ -90,7 +90,7 @@ $(document).ready(function() {
 			  $slideBGs.css("transform", "translate3d("+ (curSlide*50 + diff/2) +"%,0,0)");
 			});
 		  });
-		  
+
 		  $(document).on("mouseup touchend", function(e) {
 			$(document).off("mousemove touchmove");
 			if (animating) return;
@@ -109,7 +109,7 @@ $(document).ready(function() {
 			  navigateRight();
 			}
 		  });
-		  
+
 		  $(document).on("click", ".slider-control", function() {
 			if ($(this).hasClass("left")) {
 			  navigateLeft();
@@ -117,9 +117,9 @@ $(document).ready(function() {
 			  navigateRight();
 			}
 		  });
-		  
+
 		  $(document).on("click", ".slider-pagi__elem", function() {
 			curSlide = $(this).data("page");
 			changeSlides();
 		  });
-  });		  
+  });

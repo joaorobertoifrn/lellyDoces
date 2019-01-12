@@ -3,7 +3,7 @@ jQuery(function ($) {
     $(document).ready(function () {
         "use strict"
 
-		//Scrolling feature 
+		//Scrolling feature
 
         $('.page-scroll a').on('click', function (event) {
             var $anchor = $(this);
@@ -12,7 +12,7 @@ jQuery(function ($) {
             }, 1500, 'easeInOutExpo');
             event.preventDefault();
         });
-		
+
         //	Back Top Link
 
         var offset =100;
@@ -23,10 +23,10 @@ jQuery(function ($) {
             } else {
                 $('.back-to-top').fadeOut(400);
             }
-        });     		
-		
+        });
+
         //Owl-sliders
-		
+
 		$("#owl-services").owlCarousel({
 			dots: true,
 			loop: true,
@@ -42,7 +42,7 @@ jQuery(function ($) {
 				991: {items: 3,},
 			}
 		});
-		
+
 		$("#owl-about").owlCarousel({
 			dots: true,
 			loop: true,
@@ -54,7 +54,7 @@ jQuery(function ($) {
 				991: {items: 1,},
 			}
 		});
-		
+
 		$("#owl-icons").owlCarousel({
 			dots: true,
 			loop: true,
@@ -70,7 +70,7 @@ jQuery(function ($) {
 				991: {items: 3,},
 			}
 		});
-		
+
 		$("#owl-testimonial").owlCarousel({
           dots: true,
 			loop: true,
@@ -82,7 +82,7 @@ jQuery(function ($) {
 				991: {items: 2,},
 			}
         });
-		
+
 		$("#owl-blog").owlCarousel({
           dots: true,
 			loop: true,
@@ -93,8 +93,8 @@ jQuery(function ($) {
 				1: {items: 1,},
 				991: {items: 3,},
 			}
-        });	
-		
+        });
+
 		$("#owl-team").owlCarousel({
 			dots: true,
 			loop: true,
@@ -109,8 +109,8 @@ jQuery(function ($) {
 				1: {items: 1,},
 				991: {items: 3,},
 			}
-		});				
-		
+		});
+
 		// Pretty Photo
 
         $("a[data-gal^='prettyPhoto']").prettyPhoto({
@@ -126,26 +126,26 @@ jQuery(function ($) {
             /* light_rounded / dark_rounded / light_square / dark_square / facebook */
         });
 
-		
+
     });// end document ready function
 
     //On Click  function
 	$(document).on('click',function(){
-		
+
 		//Navbar toggle
 		$('.navbar .collapse').collapse('hide');
-		
-	})	
-	
-	
+
+	})
+
+
 	// Window load function
 
-    $(window).load(function () {   
+    $(window).load(function () {
 
-	     // Page Preloader 	
+	     // Page Preloader
 
         $("#loading").fadeOut(1000);
-		
+
         //Load Skrollr
 
 		var skr0llr = skrollr.init({
@@ -153,10 +153,10 @@ jQuery(function ($) {
                 //hack - forces mobile version to be off
                 return false;
             }
-		});			
+		});
 
-        //Portfolio Isotope 
-		
+        //Portfolio Isotope
+
         var $container = $('#lightbox');
         $container.isotope({
             filter: '*',
@@ -173,7 +173,7 @@ jQuery(function ($) {
 			columnWidth: '.col-sm-3'
 			});
 		});
-		
+
 
 		//Portfolio Nav Filter
 
@@ -192,7 +192,7 @@ jQuery(function ($) {
             });
             return false;
         });
-		
+
     });// end window load function
-   
+
 });
