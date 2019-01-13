@@ -1,0 +1,72 @@
+<!-- page content -->
+<div class="right_col" role="main">
+    <div class="">
+    <div class="page-title">
+        <div class="title_left">
+        <h3>Lista - Administradores</h3>
+        </div>
+
+        <div class="title_right">
+        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+            <div class="input-group">
+            <input type="text" class="form-control" placeholder="Pesquisar por...">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+            </span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+            <h2>Administradores</h2>
+            <ul class="nav navbar-right panel_toolbox">
+            </ul>
+            <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+            <!-- Conteúdo -->
+                <div class="table-responsive">
+                    <table class="table table-striped jambo_table bulk_action">
+                    <thead>
+                        <tr class="headings">
+                        <th>#</th>
+                        <th>Email</th>
+                        <th class="column-title no-link last"><span class="nobr">Ação</span>
+                        </th>
+                        <th class="bulk-actions" colspan="7">
+                            <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
+                        </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% @admins.each do |admin| %>
+                        <tr>
+                            <td><%= admin.id %></td>
+                            <td><%= admin.email %></td>
+                            <td style="width: 120px">
+                                <button type="button" class="btn btn-primary btn-circle btn-sm">
+                                <i class="fa fa-edit"></i>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-circle btn-sm">
+                                <i class="fa fa-minus"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <% end %>
+                    </tbody>
+                    </table>
+                </div>
+            <!-- /Conteúdo -->
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- /page content -->

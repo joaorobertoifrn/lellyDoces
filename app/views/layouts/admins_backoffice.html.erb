@@ -7,14 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Lelly Doces - Administração</title>
+    <title>Lelly Doces | Administração </title>
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <!-- Begin Styles -->
     <%= stylesheet_link_tag    'application'%>
     <%= stylesheet_link_tag    'admins_backoffice'%>
-
+    <!-- End Styles -->
   </head>
 
   <body class="nav-md">
@@ -23,7 +24,9 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"> <span>Lelly Doces</span></a>
+              <%= link_to admins_backoffice_home_index_path, class:"site_title" do %> 
+                <span>Lelly Doces</span>
+              <% end %>
             </div>
 
             <div class="clearfix"></div>
@@ -31,7 +34,7 @@
             <!-- menu profile quick info -->
             <div class="profile clearfix">
               <div class="profile_pic">
-                    <%= image_tag 'img.jpg', alt:'' , class:"img-circle profile_img"%>
+                <%= image_tag 'img.jpg', alt:'' , class:"img-circle profile_img"%>
               </div>
               <div class="profile_info">
                 <span>Bem Vindo,</span>
@@ -40,6 +43,7 @@
               <div class="clearfix"></div>
             </div>
             <!-- /menu profile quick info -->
+
             <br />
 
             <!-- sidebar menu -->
@@ -49,26 +53,75 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-edit"></i> Cadastros <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="#">Clientes</a></li>
-                      <li><a href="#">Produtos</a></li>
-                      <li><a href="#">Fornecedores</a></li>
-                      <li><a href="#">Transportadora</a></li>
+                      <li>
+                        <%= link_to admins_backoffice_admins_index_path do %>
+                              <i class="fa fa-users fa-fw"></i> Clientes
+                        <% end %>
+                      </li>
+                      <li>
+                        <%= link_to admins_backoffice_admins_index_path do %>
+                              <i class="fa fa-users fa-fw"></i> Produtos
+                        <% end %>
+                      </li>
+                      <li>
+                        <%= link_to admins_backoffice_admins_index_path do %>
+                              <i class="fa fa-users fa-fw"></i> Fornecedores
+                        <% end %>
+                      </li>
+                      <li>
+                        <%= link_to admins_backoffice_admins_index_path do %>
+                              <i class="fa fa-users fa-fw"></i> Transportadora
+                        <% end %>
+                      </li>
+                      <li>
+                        <%= link_to admins_backoffice_admins_index_path do %>
+                              <i class="fa fa-users fa-fw"></i> Administradores
+                        <% end %>
+                      </li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-money"></i> Financeiro <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="#">Contas a Pagar</a></li>
-                      <li><a href="#">Contas a Receber</a></li>
+                      <li>
+                        <%= link_to admins_backoffice_admins_index_path do %>
+                              <i class="fa fa-users fa-fw"></i> Contas a Pagar
+                        <% end %>
+                      </li>
+                      <li>
+                        <%= link_to admins_backoffice_admins_index_path do %>
+                              <i class="fa fa-users fa-fw"></i> Contas a Receber
+                        <% end %>
+                      </li>
                     </ul>
                   </li>
 
                   <li><a><i class="fa fa-bar-chart-o"></i> Relatórios <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="#">Clientes</a></li>
-                      <li><a href="#">Vendas</a></li>
-                      <li><a href="#">Custos</a></li>
-                      <li><a href="#">a Pagar</a></li>
-                      <li><a href="#">a Receber</a></li>
+                      <li>
+                        <%= link_to admins_backoffice_admins_index_path do %>
+                              <i class="fa fa-users fa-fw"></i> Clientes
+                        <% end %>
+                      </li>
+                      <li>
+                        <%= link_to admins_backoffice_admins_index_path do %>
+                              <i class="fa fa-users fa-fw"></i> Vendas
+                        <% end %>
+                      </li>
+                      <li>
+                        <%= link_to admins_backoffice_admins_index_path do %>
+                              <i class="fa fa-users fa-fw"></i>Custos
+                        <% end %>
+                      </li>
+                      <li>
+                        <%= link_to admins_backoffice_admins_index_path do %>
+                              <i class="fa fa-users fa-fw"></i>a Pagar
+                        <% end %>
+                      </li>
+                      <li>
+                        <%= link_to admins_backoffice_admins_index_path do %>
+                              <i class="fa fa-users fa-fw"></i>a Receber
+                        <% end %>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -117,7 +170,6 @@
                         Sair
                       <% end %>
                     </li>
-
                   </ul>
                 </li>
               </ul>
@@ -125,59 +177,7 @@
           </div>
         </div>
         <!-- /top navigation -->
-
-        <!-- page content -->
-        <div class="right_col" role="main">
-          <div class="">
-            <div class="page-title">
-              <div class="title_left">
-                <h3>Administração</h3>
-              </div>
-
-              <div class="title_right">
-                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for...">
-                    <span class="input-group-btn">
-                      <button class="btn btn-default" type="button">Go!</button>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div class="row">
-              <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Plain Page</h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Opções 1</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="x_content">
-                    <%= yield %>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- /page content -->
-
+          <%= yield %>
         <!-- footer content -->
         <footer>
           <div class="pull-right">
@@ -189,8 +189,9 @@
       </div>
     </div>
 
+    <!-- Begin Scripts -->
     <%= javascript_include_tag 'application'%>
     <%= javascript_include_tag 'admins_backoffice'%>
-
+    <!-- End Scripts -->
   </body>
 </html>
