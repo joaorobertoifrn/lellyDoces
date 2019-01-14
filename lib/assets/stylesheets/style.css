@@ -457,7 +457,7 @@ ul.slider-pagi {padding-left:0px;}
 
 .slide:nth-child(1) .slide__bg {
   left: 0;
-  background-image: url(slide1.jpg);
+  background-image: url("slide1.jpg");
 }
 
 /* slide2 */
@@ -468,7 +468,7 @@ ul.slider-pagi {padding-left:0px;}
 
 .slide:nth-child(2) .slide__bg {
   left: -50%;
-  background-image: url(slide2.jpg);
+  background-image: url("slide2.jpg");
 }
 
 /* slide3 */
@@ -479,7 +479,7 @@ ul.slider-pagi {padding-left:0px;}
 
 .slide:nth-child(3) .slide__bg {
   left: -100%;
-  background-image: url(slide3.jpg);
+  background-image: url("slide3.jpg");
 }
 
 /* slide4 */
@@ -490,7 +490,7 @@ ul.slider-pagi {padding-left:0px;}
 
 .slide:nth-child(4) .slide__bg {
   left: -150%;
-  background-image: url(slide4.jpg);
+  background-image: url("slide4.jpg");
 }
 
 /*===========================
@@ -498,13 +498,13 @@ ul.slider-pagi {padding-left:0px;}
 ============================ */
 
 #offer {
-	background-image:url(bake_pattern.png);
+	background-image:url("bake_pattern.png");
 	background-position:85%;
 	background-repeat:no-repeat;
 }
 
 #offer .container{
-	background-image:url(offer.png);
+	background-image:url("offer.png");
 	background-position:top left;
 	background-repeat:no-repeat;
 }
@@ -618,7 +618,7 @@ ul.slider-pagi {padding-left:0px;}
 /* Blog Preview */
 
 #blog-preview {
-	background-image:url(cakepops_bg.png);
+	background-image:url("cakepops_bg.png");
 	background-position:bottom right;
 	background-repeat:no-repeat;
 }
@@ -668,7 +668,7 @@ ul.slider-pagi {padding-left:0px;}
 /* Jumbotron */
 
 #blog-main .jumbotron {
-	background : url(blogmain.jpg) no-repeat;
+	background :url("blogmain.jpg") no-repeat;
 	background-size:cover !important;
 }
 
@@ -1016,7 +1016,7 @@ ul.slider-pagi {padding-left:0px;}
 ============================ */
 
 #promo{
-	background-image: url(bgpromo.jpg);
+	background-image: url("bgpromo.jpg");
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
@@ -1069,7 +1069,7 @@ ul.slider-pagi {padding-left:0px;}
 ============================ */
 
 #newsletter{
-	background-image: url(caketopbg.png);
+	background-image: url("caketopbg.png");
 	background-position:bottom;
 	background-repeat:repeat-x;
 }
@@ -1086,7 +1086,7 @@ ul.slider-pagi {padding-left:0px;}
 ============================ */
 
 #contact .container  {
-	background-image: url(contact_bg.png);
+	background-image: url("contact_bg.png");
 	background-position:right;
 	background-repeat:no-repeat;
 }
@@ -1121,7 +1121,7 @@ ul.slider-pagi {padding-left:0px;}
 
 footer {
 	padding: 50px 10px;
-	background-image:url(border.png);
+	background-image: url("border.png");
 	background-position:bottom;
 	background-repeat:repeat-x;
 }
@@ -1284,7 +1284,7 @@ section{background:#fff;}
     padding: 20px;
 	border-radius:10px;
 	color:#fff;
-	background-image:url(border.png),url(border.png);
+	background-image: url("border.png"), url("border.png");
 	background-position:top,bottom;
 	background-repeat:repeat-x;
 }
@@ -1825,7 +1825,7 @@ textarea.form-control:focus{outline:0 none;}
 /* page title*/
 
 .page-title {
-	background-image:url(caketopbg.png),url(caketopbg.png);
+	background-image: url("caketopbg.png"),url("caketopbg.png");
 	background-position:right,left;
 	background-repeat:no-repeat;
     color: #fff;

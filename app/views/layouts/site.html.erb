@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+   <head>
       <meta charset="utf-8">
-      <!--[if IE]>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <![endif]-->
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- Page title -->
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+      <title>Lelly Doces</title>
 
-    <%= stylesheet_link_tag    'application' %>
-    <%= stylesheet_link_tag    'site'%>
+      <%= csrf_meta_tags %>
+      <%= csp_meta_tag %>
 
-  </head>
+      <%= stylesheet_link_tag    'application' %>
+
+      <%= stylesheet_link_tag    'site'%>
+      <!-- Favicons-->
+      <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   </head>
    <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
       <!-- Navbar -->
       <nav class="navbar navbar-custom navbar-fixed-top"  id="navbar-custom">
@@ -35,9 +38,8 @@
             <div class="collapse navbar-collapse" id="navbar-brand">
                <ul class="nav navbar-nav page-scroll navbar-right">
                   <li><a href="#page-top">Home</a></li>
-                  <li><a href="#about">Sobre nós</a></li>
+                  <li><a href="#about">Sobre</a></li>
                   <li><a href="#gallery">Galeria</a></li>
-                  <li><a href="#team">Equipe</a></li>
                   <li><a href="#contact">Contato</a></li>
                </ul>
             </div>
@@ -58,6 +60,7 @@
          </div>
       </div>
       <!-- /preloader -->
+
       <!-- Slider -->
       <div class="slider-container">
          <!-- Controls -->
@@ -86,7 +89,7 @@
                   </svg>
                   <!--Title -->
                   <div class="slide__text">
-                     <h1><span>Welcome to</span><br>Piece of cake</h1>
+                     <h1><span>Bem Vindo a</span><br>Lelly Doces</h1>
                      <div class="hidden-xs hidden-sm hidden-md">
                         <p class="subtitle">A HTML Template with the perfect design for your website, It Includes beautiful ilustrations and useful features.</p>
                         <div class="page-scroll">
@@ -94,7 +97,7 @@
                            <a class="btn" href="#contact">
                               <div class="btn-line"></div>
                               <div class="btn-line btn-line-shift"></div>
-                              Contato
+                              Contact us
                            </a>
                         </div>
                      </div>
@@ -124,7 +127,7 @@
                   </svg>
                   <!--Title -->
                   <div class="slide__text">
-                     <h1><span>We Love</span><br>Cupcakes</h1>
+                     <h1><span>Amamos</span><br>Cupcakes</h1>
                      <div class="hidden-xs hidden-sm hidden-md">
                         <p class="subtitle">Non metus ali quam eros eget liquam erat volutpat phasellus ac sodales felis lorem ipsuet lorens.</p>
                         <div class="page-scroll">
@@ -132,7 +135,7 @@
                            <a class="btn" href="#contact">
                               <div class="btn-line"></div>
                               <div class="btn-line btn-line-shift"></div>
-                              Contato
+                              Contact us
                            </a>
                         </div>
                      </div>
@@ -162,7 +165,7 @@
                   </svg>
                   <!--Title -->
                   <div class="slide__text">
-                     <h1><span>We make cakes for</span><br>Your event</h1>
+                     <h1><span>Fazemos Bolo para </span><br>Seu Evento</h1>
                      <div class="hidden-xs hidden-sm hidden-md">
                         <p class="subtitle">Non metus ali quam eros eget liquam erat volutpat phasellus ac sodales felis lorem ipsuet lorens.</p>
                         <div class="page-scroll">
@@ -170,7 +173,7 @@
                            <a class="btn" href="#contact">
                               <div class="btn-line"></div>
                               <div class="btn-line btn-line-shift"></div>
-                              Contato
+                              Contact us
                            </a>
                         </div>
                      </div>
@@ -200,7 +203,7 @@
                   </svg>
                   <!--Title -->
                   <div class="slide__text">
-                     <h1><span>Try our amazing</span><br>Macarons</h1>
+                     <h1><span>Experimente nossa</span><br>Torta de Chantininho</h1>
                      <div class="hidden-xs hidden-sm hidden-md">
                         <p class="subtitle">Non metus ali quam eros eget liquam erat volutpat phasellus ac sodales felis lorem ipsuet lorens.</p>
                         <div class="page-scroll">
@@ -208,7 +211,7 @@
                            <a class="btn" href="#contact">
                               <div class="btn-line"></div>
                               <div class="btn-line btn-line-shift"></div>
-                              Contato
+                              Contact us
                            </a>
                         </div>
                      </div>
@@ -223,33 +226,12 @@
       </div>
       <!-- /slider -->
 
-      <!-- Section offer -->
-      <section id="offer" class="color-section">
-         <div class="container" data-0="background-position:82% 20px;" data-end="background-position:82% 1200px">
-            <div class="col-md-6 text-center">
-               <h4>Oferta da Semana</h4>
-               <p>Viverra elit ellus ac sodales felis tiam non metus ali quam eros eget liquam erat volutpat phasellus ac sodales felis.</p>
-               <!-- Button -->
-               <div class="page-scroll">
-                  <a class="btn" href="#menu">
-                     <div class="btn-line"></div>
-                     <div class="btn-line btn-line-shift"></div>
-                     mais detalhes
-                  </a>
-               </div>
-            </div>
-			<!-- /col-md-6 -->
-         </div>
-         <!--  container -->
-      </section>
-      <!-- / section -->
-
       <!-- Section About -->
       <section id="about" class="color-section2">
          <div class="container">
             <!-- Section Heading -->
             <div class="section-heading">
-               <h2>Sobre nós</h2>
+               <h2>Sobre</h2>
                <div class="hr"></div>
             </div>
             <!-- Text -->
@@ -318,6 +300,7 @@
                </div>
                <!-- /col-lg-4 -->
             </div>
+            <!-- /row -->
          </div>
          <!--/container-->
       </section>
@@ -344,24 +327,24 @@
                <div class="col-md-12 wow fadeInUp">
                   <div id="lightbox">
                      <!-- Image 1 -->
-                     <div class="sweets col-lg-4 col-sm-6 col-md-6">
+                     <div class="cakes col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
                               <%= image_tag 'gallery1.jpg', class:"img-responsive", alt:'' %>
-                              <a href="gallery1.jpg" data-gal="prettyPhoto[gallery]"  title="You can add caption to pictures.">
+                              <%= link_to 'gallery1.jpg', rel:"prettyPhoto[pp_gal]",  title:"You can add caption to pictures." do %>
                               <span class="overlay-mask"></span>
-                              </a>
+                              <% end %>
                            </div>
                         </div>
                      </div>
                      <!-- Image 2 -->
-                     <div class="sweets col-lg-4 col-sm-6 col-md-6">
+                     <div class="cakes col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
                               <%= image_tag 'gallery2.jpg', class:"img-responsive", alt:'' %>
-                              <a href="gallery2.jpg" data-gal="prettyPhoto[gallery]"  title="You can add caption to pictures.">
+                              <%= link_to 'gallery2.jpg', rel:"prettyPhoto[pp_gal]",  title:"You can add caption to pictures." do %>
                               <span class="overlay-mask"></span>
-                              </a>
+                              <% end %>
                            </div>
                         </div>
                      </div>
@@ -370,31 +353,31 @@
                         <div class="isotope-item">
                            <div class="gallery-thumb">
                               <%= image_tag 'gallery3.jpg', class:"img-responsive", alt:'' %>
-                              <a href="gallery3.jpg" data-gal="prettyPhoto[gallery]"  title="You can add caption to pictures.">
+                              <%= link_to 'gallery3.jpg', rel:"prettyPhoto[pp_gal]",  title:"You can add caption to pictures." do %>
                               <span class="overlay-mask"></span>
-                              </a>
+                              <% end %>
                            </div>
                         </div>
                      </div>
                      <!-- Image 4 -->
-                     <div class="sweets col-lg-4 col-sm-6 col-md-6">
+                     <div class="cakes col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
                               <%= image_tag 'gallery4.jpg', class:"img-responsive", alt:'' %>
-                              <a href="gallery4.jpg" data-gal="prettyPhoto[gallery]"  title="You can add caption to pictures.">
+                              <%= link_to 'gallery4.jpg', rel:"prettyPhoto[pp_gal]",  title:"You can add caption to pictures." do %>
                               <span class="overlay-mask"></span>
-                              </a>
+                              <% end %>
                            </div>
                         </div>
                      </div>
                      <!-- Image 5 -->
-                     <div class="sweets col-lg-4 col-sm-6 col-md-6">
+                     <div class="cakes col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
                               <%= image_tag 'gallery5.jpg', class:"img-responsive", alt:'' %>
-                              <a href="gallery5.jpg" data-gal="prettyPhoto[gallery]"  title="You can add caption to pictures.">
+                              <%= link_to 'gallery5.jpg', rel:"prettyPhoto[pp_gal]",  title:"You can add caption to pictures." do %>
                               <span class="overlay-mask"></span>
-                              </a>
+                              <% end %>
                            </div>
                         </div>
                      </div>
@@ -403,9 +386,9 @@
                         <div class="isotope-item">
                            <div class="gallery-thumb">
                               <%= image_tag 'gallery6.jpg', class:"img-responsive", alt:'' %>
-                              <a href="gallery6.jpg" data-gal="prettyPhoto[gallery]"  title="You can add caption to pictures.">
+                              <%= link_to 'gallery6.jpg', rel:"prettyPhoto[pp_gal]",  title:"You can add caption to pictures." do %>
                               <span class="overlay-mask"></span>
-                              </a>
+                              <% end %>
                            </div>
                         </div>
                      </div>
@@ -414,20 +397,20 @@
                         <div class="isotope-item">
                            <div class="gallery-thumb">
                               <%= image_tag 'gallery7.jpg', class:"img-responsive", alt:'' %>
-                              <a href="gallery7.jpg" data-gal="prettyPhoto[gallery]"  title="You can add caption to pictures.">
+                              <%= link_to 'gallery7.jpg', rel:"prettyPhoto[pp_gal]",  title:"You can add caption to pictures." do %>
                               <span class="overlay-mask"></span>
-                              </a>
+                              <% end %>
                            </div>
                         </div>
                      </div>
                      <!-- Image 8 -->
-                     <div class="sweets col-lg-4 col-sm-6 col-md-6">
+                     <div class="cakes col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
                               <%= image_tag 'gallery8.jpg', class:"img-responsive", alt:'' %>
-                              <a href="gallery8.jpg" data-gal="prettyPhoto[gallery]"  title="You can add caption to pictures.">
+                              <%= link_to 'gallery8.jpg', rel:"prettyPhoto[pp_gal]",  title:"You can add caption to pictures." do %>
                               <span class="overlay-mask"></span>
-                              </a>
+                              <% end %>
                            </div>
                         </div>
                      </div>
@@ -436,20 +419,20 @@
                         <div class="isotope-item">
                            <div class="gallery-thumb">
                               <%= image_tag 'gallery9.jpg', class:"img-responsive", alt:'' %>
-                              <a href="gallery9.jpg" data-gal="prettyPhoto[gallery]"  title="You can add caption to pictures.">
+                              <%= link_to 'gallery9.jpg', rel:"prettyPhoto[pp_gal]",  title:"You can add caption to pictures." do %>
                               <span class="overlay-mask"></span>
-                              </a>
+                              <% end %>
                            </div>
                         </div>
                      </div>
                      <!-- Image 10 -->
-                     <div class="sweets col-lg-4 col-sm-6 col-md-6">
+                     <div class="cakes col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
                               <%= image_tag 'gallery10.jpg', class:"img-responsive", alt:'' %>
-                              <a href="gallery10.jpg" data-gal="prettyPhoto[gallery]"  title="You can add caption to pictures.">
+                              <%= link_to 'gallery10.jpg', rel:"prettyPhoto[pp_gal]",  title:"You can add caption to pictures." do %>
                               <span class="overlay-mask"></span>
-                              </a>
+                              <% end %>
                            </div>
                         </div>
                      </div>
@@ -458,20 +441,20 @@
                         <div class="isotope-item">
                            <div class="gallery-thumb">
                               <%= image_tag 'gallery11.jpg', class:"img-responsive", alt:'' %>
-                              <a href="gallery11.jpg" data-gal="prettyPhoto[gallery]"  title="You can add caption to pictures.">
+                              <%= link_to 'gallery11.jpg', rel:"prettyPhoto[pp_gal]",  title:"You can add caption to pictures." do %>
                               <span class="overlay-mask"></span>
-                              </a>
+                              <% end %>
                            </div>
                         </div>
                      </div>
                      <!-- Image 12 -->
-                     <div class="sweets col-lg-4 col-sm-6 col-md-6">
+                     <div class="cakes col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
                               <%= image_tag 'gallery12.jpg', class:"img-responsive", alt:'' %>
-                              <a href="gallery12.jpg" data-gal="prettyPhoto[gallery]"  title="You can add caption to pictures.">
+                              <%= link_to 'gallery12.jpg', rel:"prettyPhoto[pp_gal]",  title:"You can add caption to pictures." do %>
                               <span class="overlay-mask"></span>
-                              </a>
+                              <% end %>
                            </div>
                         </div>
                      </div>
@@ -480,12 +463,13 @@
                         <div class="isotope-item">
                            <div class="gallery-thumb">
                               <%= image_tag 'gallery13.jpg', class:"img-responsive", alt:'' %>
-                              <a href="gallery13.jpg" data-gal="prettyPhoto[gallery]"  title="You can add caption to pictures.">
+                              <%= link_to 'gallery13.jpg', rel:"prettyPhoto[pp_gal]",  title:"You can add caption to pictures." do %>
                               <span class="overlay-mask"></span>
-                              </a>
+                              <% end %>
                            </div>
                         </div>
                      </div>
+
                   </div>
                   <!-- /lightbox-->
                </div>
@@ -502,85 +486,28 @@
 		 data-100-start="transform:rotate(-0deg); left:3%;margin-top:-100px;"
 		   data-center="transform:rotate(-370deg);">
 		   <!-- Image -->
-		   <%= image_tag 'cake2.png', alt:'' %>
+         <%= image_tag 'cake2.png', alt:'' %>
 		</div>
 
-	 <!-- Parallax object -->
-		<div class="parallax-object hidden-sm hidden-xs hidden-md"
-		 data-100-start="transform:rotate(-0deg); right:3%;"
-		   data-center="transform:rotate(-370deg);">
-		   <!-- Image -->
-		   <%= image_tag 'donut.png', alt:'' %>
-		</div>
+      <!-- Divider -->
+      <div class="slanted-divider"></div>
 
-      <!-- Section Team -->
-      <section id="team">
+      <!-- Section Promo -->
+      <section id="promo">
          <div class="container">
-            <!-- Section Heading -->
-            <div class="section-heading">
-               <h2>Equipe</h2>
-               <div class="hr"></div>
-            </div>
-            <div id="owl-team" class="owl-carousel">
-               <!-- Team member 1 -->
-               <div class="team-member">
-                  <div class="profile-image img-zoom">
-                     <%= image_tag 'team1.jpg', alt:'' %>
-                  </div>
-                  <div class="team-caption">
-                     <h4>Gracielly</h4>
-                     <h6>Propeietária</h6>
-                     <p>Ibu lum orci eget liquam erat volut pat phas ellus ac sodales felis commolu ptatemp dolupta orem retibusam.</p>
-                     <!--Social icons -->
-                     <div class="social-media smaller">
-                        <a href="#" title=""><i class="fa fa-facebook"></i></a>
-                        <a href="#" title=""><i class="fa fa-instagram"></i></a>
-                     </div>
-                  </div>
+            <div class="col-md-6 col-sm-6 col-centered well text-center">
+               <h4>Visit us Today!</h4>
+               <p>Lotam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi Suspendisse a elementum anteu imperdiet et maecenas eu eros non nibh aliquet iaculis..</p>
+               <!-- Button -->
+               <div class="page-scroll">
+                  <a class="btn " href="#contact">
+                     <div class="btn-line"></div>
+                     <div class="btn-line btn-line-shift"></div>
+                     Contact Us
+                  </a>
                </div>
-               <!--/team member ends-->
             </div>
-         </div>
-      </section>
-      <!--/ Section -->
-
-      <!-- Section Newsletter-->
-      <section id="newsletter" class="color-section" data-0="background-position:0px -40px;" data-end="background-position:1000px -40px;">
-         <div class="container">
-            <div class="col-lg-7 pull-left">
-               <h3>Assine a Newsletter</h3>
-            </div>
-            <div class="col-lg-5 pull-right">
-               <!-- Form -->
-               <div id="mc_embed_signup">
-                  <form action="//ingridkuhn.us12.list-manage.com/subscribe/post?u=04e646927a196552aaee78a7b&amp;id=0dae358e08" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                     <div id="mc_embed_signup_scroll">
-                        <div class="mc-field-group">
-                           <div class="input-group">
-                              <input class="form-control input-lg required email" type="email" value="" name="EMAIL" placeholder="Your email here" id="mce-EMAIL">
-                              <span class="input-group-btn">
-								<button class="btn" type="submit" value="Subscribe" name="subscribe"  id="mc-embedded-subscribe">
-									<div class="btn-line"></div>
-									<div class="btn-line btn-line-shift"></div>
-									Enviar
-									</button>
-								</span>
-                           </div>
-                           <!-- Subscription results -->
-                           <div id="mce-responses" class="mailchimp">
-                              <div class="alert alert-danger response" id="mce-error-response"></div>
-                              <div class="alert alert-success response" id="mce-success-response"></div>
-                           </div>
-                        </div>
-                        <!-- /mc-fiel-group -->
-                     </div>
-                     <!-- /mc_embed_signup_scroll -->
-                  </form>
-                  <!-- /form ends -->
-               </div>
-               <!-- /mc_embed_signup -->
-            </div>
-            <!-- /col-ms-5 -->
+            <!-- /col-md-6 -->
          </div>
          <!-- /.container -->
       </section>
@@ -602,24 +529,24 @@
                   <h4>Get in touch with us</h4>
                   <p>Consectetur adipiscing elit Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia.</p>
                   <ul class="contact-info">
-                     <li><i class="fa fa-map-marker"></i>Rua Matias de Vasoncelos Costa, 322 - Sandra Cavalvante - Campina Grande.</li>
-                     <li><i class="fa fa-phone"></i>(84) 9.8770-1812</li>
-                     <li><i class="fa fa-envelope"></i><a href="mailto:email@company.com">elly-vasconcelos@hotmail.com</a> </li>
+                     <li><i class="fa fa-map-marker"></i>Campina Grande, Paraíba</li>
+                     <li><i class="fa fa-phone"></i>(84) 9 8770 1812</li>
+                     <li><i class="fa fa-envelope"></i><a href="mailto:elly-vasconcelos@hotmail.com">elly-vasconcelos@hotmail.com</a> </li>
                   </ul>
                   <div class="form-style" id="contact_form">
                      <!-- Contact results -->
                      <div id="contact_results"></div>
                      <!-- Form Starts -->
                      <div class="form-group">
-                        <input type="text" name="name" class="form-control input-field" placeholder="Name" required="">
-                        <input type="email" name="email" class="form-control input-field" placeholder="Email ID" required="">
-                        <input type="text" name="subject" class="form-control input-field" placeholder="Subject">
-                        <textarea name="message" id="message" class="textarea-field form-control" rows="4" placeholder="Enter your message" required=""></textarea>
+                        <input type="text" name="name" class="form-control input-field" placeholder="Nome" required="">
+                        <input type="email" name="email" class="form-control input-field" placeholder="Email" required="">
+                        <input type="text" name="subject" class="form-control input-field" placeholder="Assunto">
+                        <textarea name="message" id="message" class="textarea-field form-control" rows="4" placeholder="Mensagem ...." required=""></textarea>
                         <!-- Button -->
                         <a class="btn" href="#contact" id="submit_btn">
                            <div class="btn-line"></div>
                            <div class="btn-line btn-line-shift"></div>
-                           Enviar Mensagem
+                           enviar
                         </a>
                      </div>
                   </div>
@@ -661,11 +588,11 @@
                   <table class="table">
                      <tbody>
                         <tr>
-                           <td class="text-left">Segunda - Sexta</td>
-                           <td class="text-right">8 a.m. até 8 p.m.</td>
+                           <td class="text-left">Segunda a Sexta</td>
+                           <td class="text-right">8 a.m. to 8 p.m.</td>
                         </tr>
                         <tr>
-                           <td class="text-left">Finais de Semana / Feriados</td>
+                           <td class="text-left">Final de Semana / Fériados</td>
                            <td class="text-right"><span class="label label-danger">Fechado</span></td>
                         </tr>
                      </tbody>
@@ -673,7 +600,7 @@
                </div>
                <!-- /col-lg-4 -->
                <div class="col-md-12 text-center">
-                  <p>Copyright © 2019 - Desenvolvedor  <a href="http://helpc.com.br">Helpc Informática</a></p>
+                  <p>Copyright © 2019 - Desenvolvido por  <a href="http://helpc.com.br">Helpc Informática</a></p>
                   <!-- /container -->
                   <!-- Go To Top Link -->
                   <div class="page-scroll hidden-sm hidden-xs">
@@ -692,3 +619,4 @@
 
    </body>
 </html>
+

@@ -4,9 +4,9 @@
 //= require jquery/dist/jquery
 //= require bootstrap/dist/js/bootstrap
 //= require main
-//= require map
 //= require mc-validate
 //= require plugins
 //= require prefixfree
 //= require slider
 //= require dmss
+//= require prettyphoto-rails
